@@ -1,0 +1,45 @@
+body{
+	background-color: #B4DCDE;
+
+
+  font-family: 'ITC Kristen W01 Normal', serif;
+  font-size: 10px;
+
+
+}
+
+h1{
+	color:orange;
+	text-align:center;
+}
+
+CSS selector {
+  font-family: 'ITC Kristen W01 Normal', serif;
+}
+
+
+
+
+
+/* Changin Effect when mouse hovers over, now changes the links and navigations*/
+/* a is any ancer tag*/
+a, a:visited {
+	color:#dc0000;
+}
+
+/* when your mouse goes over it*/
+a:hover{
+	color:#333333;
+	background-color: #73F0BC;	
+}
+
+
+
+
+
+/*
+p{
+	font-family: :"Times New roman";
+	font-size: 20px;
+}
+*/
