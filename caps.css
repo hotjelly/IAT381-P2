@@ -1,6 +1,7 @@
 body {
 	background-color: #B4DCDE;
 	margin: 0;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
 header {
@@ -22,9 +23,13 @@ a, a:visited {
 	text-decoration: none;
 }
 
+a, img {
+	border: none;
+}
+
 /* when your mouse goes over it*/
 a:hover{
-	color:#333333;
+	color:#FFF;
 }
 
 .product-nav-icons {
@@ -35,11 +40,21 @@ a:hover{
 
 .icon-text {
 	position: relative;
-	top: -50px;
-	left: 85px;
+	top: -65px;
+	left: 45px;
+}
+
+#all-button, #beanie-button, #hat-button, #cap-button {
+	height: 78px;
+	width: 135px;
+}
+
+#hat-button {
+	width: 205px;
 }
 
 #top-nav {
+	font-family: 'Patrick Hand SC', cursive;
 	display: inline-block;
 	position: absolute;
 	bottom: 0;
@@ -62,10 +77,31 @@ a:hover{
 
 #products-nav {
 	margin-bottom: 40px;
+	font-family: 'Patrick Hand SC', cursive;
+	font-weight: 800;
+	font-size: 24pt;
+}
+
+#products-nav a, #products-nav a:visited {
+	color: #f4bec9;
+	text-decoration: none;
+}
+
+/* when your mouse goes over it*/
+#products-nav a:hover{
+	color:#f92342;
+}
+
+#beanie-text {
+	left: 28px;
+}
+
+#hat-text {
+	left: 75px;
 }
 
 #products-nav ul {
-	width: 820px;
+	width: 850px;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -77,7 +113,11 @@ a:hover{
 }
 
 #hat-nav {
-	width: 250px;
+	margin: 0 40px 0 -20px;
+}
+
+a .selected {
+	color: #f92342;
 }
 
 #products {
@@ -88,6 +128,7 @@ a:hover{
 #details {
 	background-color: #FFF;
 	margin: 0 50px;
+	min-width: 970px;
 }
 
 #detail-image {
@@ -96,8 +137,8 @@ a:hover{
 
 #product-details {
 	float: right;
-	margin: 90px 80px;
-	width: 500px;
+	margin: 90px 70px 0;
+	width: 300px;
 }
 
 #tag {
@@ -108,13 +149,18 @@ a:hover{
 }
 
 #main-details {
-	margin: 0 120px;
+	margin: 0 auto;
+	width: 850px;
+}
+
+#main-details div {
+	display: inline-block;	
 }
 
 #main-details h1 {
 	color: #13a19b;
 	font-size: 32pt;
-	margin: 10px 0 0;
+	margin: 10px 0;
 }
 
 #main-details p {
@@ -137,22 +183,57 @@ a:hover{
 #story-tab {
 	width: 150px;
 	position: relative;
-	top: -40px;
-	left: 60px;
+	top: 53px;
+	left: 135px;
+}
+
+#tab-text {
+	display: inline;
+	top: 37px;
+	left: -12px;
+	position: relative;
 }
 
 #inspiration {
 	float: right;
 	border-left: 1px solid #555;
-	margin: 15px 0 0 50px;
+	margin: 15px 0 15px 50px;
+	width: 200px;
+}
+
+#inspiration img {
+	margin: 10px auto;
+	display: block;
+	width: 100px;
+	height: 100px;
+}
+
+#cart-form {
+	margin: 10px auto;
+	width: 200px;
+}
+
+#cart-form button {
+	margin-left: 15px;
+}
+
+#cart-form button:hover {
+	background-color: #11847f;
+	cursor: pointer;
 }
 
 #additional-details h3 {
-	margin: 0 50px;
+	margin: 20px 50px;
+	font-weight: 600;
+	color: #333;
 }
 
 #additional-details p {
 	margin: 10px 100px;
+	font-size: 12pt;
+	line-height: 17pt;
+	font-weight: 800;
+	color: #555;
 }
 
 button {
@@ -170,8 +251,23 @@ button {
 #close-button {
 	position: relative;
 	float: right;
-	right: 20px;
+	right: 25px;
 	top: 20px;
+	width: 40px;
+}
+
+#product-images {
+	width: 400px;
+}
+
+#extra-images {
+	margin: 0 40px;
+}
+
+.small-detail-image {
+	width: 60px;
+	height: 60px;
+	margin: 0 20px;
 }
 
 /*.product {
@@ -193,6 +289,16 @@ button {
     display: inline-block;
 	margin: 0 20px 25px;
 	border-radius: 10px;
+}
+
+.product a, .product a:visited {
+	color:#555;
+	text-decoration: none;
+}
+
+/* when your mouse goes over it*/
+.product a:hover{
+	color:#333333;
 }
 
 .product-preview {
@@ -253,4 +359,6 @@ button {
 .price {
 	float: right;
 	color: #2d5945;
+	font-size: 18pt;
+	font-weight: 600;
 }
