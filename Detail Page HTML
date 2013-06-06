@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+
+<html>
+
+
+
+
+<!-- Link font + img-->
+<head>
+  <title>This is Cap Corner Page!</title> <!-- set the title page -->
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=ITC Kristen W01 Normal"> <!-- link the stylesheet, Font style-->
+
+	<link rel="stylesheet"  type="text/css" href="Productpage.css">
+</head>
+
+
+
+
+
+
+<!-- Adding Logo+ Tabs + Text-->
+<body>
+<!--Logo position-->
+<div style="position: absolute; left:5px; top: 10px;" width="200" height="70">  
+<img src="Hat-Corner-Logo.png">
+</div>
+
+
+
+
+<!-- 5 Tabs start here-->
+ 
+ <!--Tab 1:New Story-->
+<div style="position: absolute; left:500px; top: 34px;"> 
+<IMG SRC="Top-5-Tab-NOT-selected.png">
+</div>
+
+<DIV STYLE="position:absolute; top:40px; left:510px">
+<FONT SIZE="+0.5" COLOR="00ff00">New Story</FONT>
+</DIV>
+
+
+
+<!--Tab 2: Product-->
+<div style="position: absolute; left:600px; top: 34px;"> 
+<img src="Top-5-Tab-selected.png">
+</div>
+
+<DIV STYLE="position:absolute; left:620px; top: 40px;">
+<FONT SIZE="+0.5" COLOR="FAF5F7">Product</FONT>
+</DIV>
+
+
+
+<!--Tab 3:About Us-->
+<div style="position: absolute; left:700px; top: 34px;"> 
+<img src="Top-5-Tab-NOT-selected.png">
+</div>
+
+<DIV STYLE="position:absolute; left:715px; top: 40px;">
+<FONT SIZE="+0.5" COLOR="00ff00">About Us</FONT>
+</DIV>
+
+
+
+
+<!--Tab 4:Contact Us-->
+<div style="position: absolute; left:800px; top: 34px;"> 
+<img src="Top-5-Tab-NOT-selected.png">
+</div>
+
+<DIV STYLE="position:absolute; left:808px; top: 40px;">
+<FONT SIZE="+0.5" COLOR="00ff00">Contact Us</FONT>
+</DIV>
+
+
+
+<!--Tab 5:Add Cart-->
+<div style="position: absolute; left:900px; top: 34px;"> 
+<img src="Top-5-Tab-NOT-selected.png">
+</div>
+
+<DIV STYLE="position:absolute; left:912px; top: 40px;">
+<FONT SIZE="+0.5" COLOR="00ff00">Add Cart</FONT>
+</DIV>
+
+
+</body>
+
+
+
+
+
+<!-- Description on the right of the Product picture-->
+<body>
+
+	<!-- Header1: Dragon Pro-->
+	<h1>
+		<DIV STYLE="position:absolute; left:800px; top: 300px;">
+		<FONT SIZE="+10" COLOR="13A19B">Dragon Pro</FONT>
+        </DIV>
+	</h1>
+
+	<!-- Header2:Production Date: Jun 02,2013-->
+	<h2>
+		<DIV STYLE="position:absolute; left:800px; top: 353px;">
+		<FONT SIZE="+0.3" COLOR="7F7F7F">Production Date: Jun 02,2013</FONT>
+        </DIV>
+	</h2>
+
+
+	<!-- Header3:Production Date: Jun 02,2013-->
+	<h3>
+		<DIV STYLE="position:absolute; left:800px; top: 379px;">
+		<FONT SIZE="+10" COLOR="13A19B">$99.99</FONT>
+        </DIV>
+	</h3>
+	
+	<!-- Header 3 1:Production materials-->
+	<h4>
+		<DIV STYLE="position:absolute; left:800px; top: 426px;">
+		<FONT SIZE="+0.3" COLOR="7F7F7F"> WE produced 5, 6, 7 panel of various of sport cap or styling cap. This product was used materials such as cottoon fabric and button. It was inspired from the Dragon Boat Festival on June 21st, 2013. To find more detaisl, check out below</FONT>
+        </DIV>
+
+	</h4>
+
+
+
+
+
+<!-- Draw a quantity Box-->
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="300" height="90"></canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      context.beginPath();
+      context.rect(1000,520 , 200, 100);
+      context.fillStyle = 'green';
+      context.fill();
+      context.lineWidth = 2;
+      context.strokeStyle = 'black';
+      context.stroke();
+       </script>
+  </body>
+
+
+
+
+
+
+<!-- Header 5:Add Cart-->
+	<h5>
+		<DIV STYLE="position:absolute; left:900px; top: 620px;">
+		<FONT SIZE="+1" COLOR="FAFCFC"> Add Cart</FONT>
+        </DIV>
+
+	</h5>
+
+
+<!-- Header 6:Story Description-->
+	<h6>
+		<DIV STYLE="position:absolute; left:300px; top: 780px;">
+		<FONT SIZE="+2.5" COLOR="7F7F7F"> Story Description</FONT>
+        </DIV>
+
+	</h6>
+
+<!-- Header 7:Story Description-->
+	<h7>
+		<DIV STYLE="position:absolute; left:325px; top: 820px;">
+		<FONT SIZE="+1" COLOR="7F7F7F">This Dragon Pro was made in Jun 02,2013. It was made by Kristen William. It was actually inspired by the Chinese dragon boat festival in the middle of June. She was trying to integrate the idea the of action of the dragon, color of summer and passionate feeling of people in the event. THere was several iterations before this final product was launched. The style is mixed with mordern and vintage feel wich the backdrop was a bit dull but it still has many colourful elements mixing around.The quality she applied was fabric.There is only one size for this product.
+		</FONT>
+        </DIV>
+
+	</h7>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>
