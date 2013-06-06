@@ -1,14 +1,11 @@
 $( document ).ready(function() {
-    //alert( "ready!" );
-    var currentProduct = null;
-    $(".product").hover(hoverProduct, unhoverProduct)
-    
+	
     $("#all-button").hover(
 	  function () {
 	    $(this).attr('src', 'img/All-Selected.png');
 	  },
 	  function () {
-	    $(this).find("span:last").remove();
+	    $(this).attr('src', 'img/All--NOT-Selected.png');
 	  }
 	);
 	
@@ -17,10 +14,30 @@ $( document ).ready(function() {
 	    $(this).attr('src', 'img/Hat-Selected.png');
 	  },
 	  function () {
-	    $(this).find("span:last").remove();
+	    $(this).attr('src', 'img/Hat--NOT-Selected.png');
+	  }
+	);
+	
+	$("#beanie-button").hover(
+	  function () {
+	    $(this).attr('src', 'img/Beanie-Selected.png');
+	  },
+	  function () {
+	    $(this).attr('src', 'img/Beanie--NOT-Selected.png');
+	  }
+	);
+	
+	$("#cap-button").hover(
+	  function () {
+	    $(this).attr('src', 'img/Cap-Selected.png');
+	  },
+	  function () {
+	    $(this).attr('src', 'img/Cap--NOT-Selected.png');
 	  }
 	);
     
+    var currentProduct = null;
+    $(".product").hover(hoverProduct, unhoverProduct);
     
     function hoverProduct() {
     	$( ".product" ).each(function( index ) {

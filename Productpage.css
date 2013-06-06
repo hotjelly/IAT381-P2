@@ -8,6 +8,16 @@ body{
 
 }
 
+header {
+	/*position: absolute;
+	left: 5px;
+	top: 10px;*/
+	margin: 0;
+	background-color: #FFF;
+}
+
+<div style="position: absolute; left:5px; top: 10px;" width="200" height="70">  
+
 h1{
 	color:orange;
 	text-align:center;
