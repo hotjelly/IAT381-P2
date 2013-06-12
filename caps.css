@@ -8,7 +8,7 @@ header {
 	position: relative;
 	height: 110px;
 	margin: 20px 0 40px 0;
-	padding: 5px 0;
+	padding: 7px 0 0px;
 	background-color: #fff7be;
 	overflow: hidden;
 	/*border: 10px #c38f5b;
@@ -330,6 +330,7 @@ button {
 
 .product-preview {
 	background-color: #FFF;
+	color: #7C7462;
 	display: inline-block;
 	width:250px;
  	height:200px;
@@ -385,7 +386,21 @@ button {
 
 .price {
 	float: right;
-	color: #2d5945;
+	color: #13a19b;
 	font-size: 18pt;
 	font-weight: 600;
+}
+
+footer {
+	margin: 20px;
+}
+
+#credit-cards {
+	width: 150px;
+}
+
+#copyright {
+	float: right;
+	color: #888;
+	font-size: 21px;
 }
