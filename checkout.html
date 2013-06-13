@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cap Corner Checkout</title>
+	<link rel="stylesheet" type="text/css" href="caps.css" />
+	<link href='http://fonts.googleapis.com/css?family=Patrick+Hand+SC' rel='stylesheet' type='text/css'>
+	<script src="js/jquery-1.10.1.min.js"></script>
+	<script src="js/products.js"></script>
+	
+</head>
+<body>
+	<header>
+		<div class="border"></div>
+			<a href="#Home">
+				<img id="hat-logo" src="img/Hat-Corner-Logo.png">
+			</a>
+			
+			<nav id="top-nav">
+				<!-- unordered list -->
+				<ul>
+					<!-- make them clickable by using <a>, the # brings it to the section id that we put it -->
+					<a href="new-arrivals.html"><li>New Arrivals</li></a> 
+					<a href="products.html"><li>Products</li></a>
+					<a href="our-story.html"><li>Our Story</li></a>
+					<a href="contact.html"><li>Contact Us</li></a>
+					<a href="view-cart.html"><li id="selected">View Cart</li></a>
+	
+				</ul>
+			</nav>
+		<div class="border"></div>
+	</header>
+	
+	<section class="container">
+		<h1>View Cart</h1>
+		<div class="cart">
+			
+				<!--Telling mandatory info-->
+				<div class="checkout-details">
+					<h3>Check Out</h3>
+					<span>Your transaction is guaranteed secure</span>
+					<img class="checkout-nav" src="img/checkout-nav.png" />
+					<span>Address</span>
+					<span class="help">Need Help? <a href="#">Click Here</a></span>
+					<p>Billing address<br>
+						Please note that your billing address must exactly match the address your credit card company has on file. <br>*mandatory fields
+					</p>
+	            </div>
+		<form id="addresssection">
+	            <!--First Name Section-->
+	            <fieldset>
+					<label for="firstname"> First Name:* </label>
+					<input id="firstname" name="firstname" type="text" placeholder="First Name" required="" autofocus="">
+				</fieldset>
+
+				<!--First Name Section-->
+				<fieldset>
+					<label for="lastname"> Last Name:* </label>
+					<input id="lastname" name="lastname" type="text" placeholder="Last Name"required="" autofocus="">
+				</fieldset>
+
+					<!--Adress 1 section-->
+					<fieldset>
+
+						<label for="address1"> Address1:* </label>
+						<input id="address1" name="address1" type="text" placeholder="Address1"
+						required="" autofocus="">
+					</fieldset>
+
+					<!--Adress 2 section-->
+					<fieldset>
+
+						<label for="address2"> Address2: </label>
+						<input id="address2" name="address2"  autofocus="">
+					</fieldset>
+
+					<!--Province section-->
+					<fieldset>
+
+						<label for="province"> Province:* </label>
+						<input id="province" name="province" type="text" placeholder="Province"
+						required="" autofocus="">
+					</fieldset>
+
+					<!--City section-->
+					<fieldset>
+
+						<label for="city"> City:* </label>
+						<input id="city" name="city" type="text" placeholder="City"
+						required="" autofocus="">
+					</fieldset>
+
+					<!--Email section-->
+					<fieldset>
+
+						<label for="email"> Email Address:* </label>
+						<input id="email" name="email" type="text" placeholder="Email Address"
+						required="" autofocus="">
+					</fieldset>
+
+					<!--Retype Email section-->
+					<fieldset>
+
+						<label for="retypeemail"> Retype Address:* </label>
+						<input id="retypeemail" name="retypeemail" type="text" placeholder="Retype Email Address"
+						required="" autofocus="">
+					</fieldset>
+
+					<!--Home Phone section-->
+					<fieldset>
+						<label for="Home Phone"> Home Phone: </label>
+						<input id="Home Phone" name="Home Phone"  autofocus="">
+					</fieldset>
+
+					<!--Mobile Phone section-->
+					<fieldset>
+						<label for="Mobile Phone "> Mobile Phone : </label>
+						<input id="Mobile Phone " name="Mobile Phone "  autofocus="">
+					</fieldset>
+
+					<!--Fax section-->
+					<fieldset>
+						<label for="Fax "> Fax Number : </label>
+						<input id="Fax " name="Fax "  autofocus="">
+					</fieldset>
+
+	
+				<div class="checkout-options">
+					<input type="checkbox" name="alternate-address" value="True" id="checkbox">I want to ship to an different address
+					<p>By continuing to the next step you agree to the <a href="#">Privacy Policy, return policy and delivery terms.</a></p>
+				</div>
+				
+				<button type="submit">Save &amp; Continue</button>
+	
+			</form>
+		</div>
+	</section>	
+	
+	<footer>
+		<img id="credit-cards" src="img/Phase 2 IMG/VisaMC&AmexLogo.jpg"/>
+		<p id="copyright">&copy; Hat Corner 2013</p>
+	</footer>
+</body>
+</html>

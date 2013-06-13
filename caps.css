@@ -29,7 +29,6 @@ ul li {
 }
 
 a, a:visited {
-	color:#c38f5b;
 	text-decoration: none;
 }
 
@@ -37,18 +36,26 @@ a, img {
 	border: none;
 }
 
+header a, header a:visited {
+	color:#c38f5b;
+}
+
 /* when your mouse goes over it*/
-a:hover{
+header a:hover{
 	color:#FFF;
+}
+
+a {
+	color: #8ca1e3;
+}
+
+a:hover {
+	color: #6381e1;
 }
 
 #hat-logo {
 	height: 80px;
 	margin: 0 10px;
-}
-
-#contact-us {
-
 }
 
 .container {
@@ -57,6 +64,14 @@ a:hover{
 	margin: 0 auto;
 	border-radius: 20px;
 	overflow: hidden;
+}
+
+.container h1 {
+	margin: 30px;
+	text-align: center;
+	font-size: 52px;
+	color: #13a19b;
+	font-weight: 500;
 }
 
 .product-nav-icons {
@@ -97,7 +112,7 @@ a:hover{
 	box-shadow: 0px 0 0 2px #FFF;
 }
 
-#top-nav ul li:hover {
+#top-nav ul li:hover, #top-nav #selected {
 	background-color: #e7d6a0;
 	box-shadow: 0px 0 0 2px #e7d6a0;
 }
@@ -149,7 +164,7 @@ a .selected {
 
 #products {
 	margin: 0 auto;
-	width: 910px;
+	width: 900px;
 }
 
 #details {
@@ -240,13 +255,18 @@ a .selected {
 	width: 200px;
 }
 
-#cart-form button {
+button {
 	margin-left: 15px;
 }
 
-#cart-form button:hover {
+button:hover {
 	background-color: #11847f;
 	cursor: pointer;
+}
+
+.cart button {
+	float: right;
+	margin: 40px;
 }
 
 #additional-details h3 {
@@ -411,6 +431,7 @@ footer {
 	width: 90%;
 	margin: 25px auto;
 	border-radius: 20px;
+	position: relative;
 }
 
 .new-product img {
@@ -422,8 +443,21 @@ footer {
 	display: inline-block;
 }
 
+.new-product-extra-details {
+	width: 100px;
+	/*position: absolute;*/
+	left: 560px;
+	margin: 30px;
+}
+
 .new-product-details {
 	width: 230px;
+	/*position: absolute;*/
+	margin: 30px;
+}
+
+.new-product-detail-container {
+	display: inline-block;
 }
 
 #credit-cards {
@@ -434,4 +468,202 @@ footer {
 	float: right;
 	color: #888;
 	font-size: 21px;
+}
+
+.cart {
+	margin: 0 60px;
+}
+
+.cart-product img {
+	height: 120px;
+}
+
+.cart-head, .cart-foot {
+	border: 1px;
+	border-style: solid none;
+	position: relative;
+	height: 20px;
+}
+
+.cart h3 {
+	color: #13a19b;
+	font-size: 21px;
+	font-weight: 300;
+}
+
+.checkout-nav {
+	height: 30px;
+}
+
+.cart span {
+	font-size: 12px; 
+	color: #7F7F7F;
+}
+
+.checkout-options {
+	margin-left: 170px;
+}
+
+.checkout-details {
+	font-size:12px; 
+	color:#7F7F7F;
+}
+
+.checkout-details p {
+	margin: 5px 60px 20px;
+	width: 200px;
+}
+
+.checkout-details img {
+	display: block;
+}
+
+.help {
+	float: right;
+}
+
+fieldset {
+	border: none;
+	padding: 5px 12px;
+}
+
+label {
+	width: 150px;
+	display: inline-block;
+}
+
+.our-story p {
+	margin: 10px 80px 50px;
+	color: #555;
+	font-size: 16pt;
+}
+
+.contact-container {
+	margin: 20px 50px;
+}
+
+.contact-details {
+	margin-left: 20px;
+}
+
+.email-button {
+	margin: 0 auto;
+	display: block;
+}
+
+.product-link {
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 2;
+}
+
+.cart-product-price, .cart-product-quantity, .cart-product-remove {
+	float: right;
+	position: absolute;
+	top: 0;
+	text-align: center;
+}
+
+.cart-product-remove {
+	right: 0;
+	width: 100px;
+}
+
+.cart-product-quantity {
+	right: 200px;
+	width: 100px;
+}
+
+.cart-product-quantity input {
+	width: 30px;
+	text-align: center;
+}
+
+.cart-product-quantity a {
+	display: block;
+}
+
+.cart-product-price {
+	right: 100px;
+	width: 100px;
+}
+
+.cart-product {
+	overflow: hidden;
+	position: relative;
+}
+
+.price-label, .quantity-label {
+	position: absolute;
+	text-align: center;
+}
+
+.price-label {
+	right: 100px;
+	width: 100px;http://www.sfu.ca/~kcalder/iat381D402/P02-2/detailpage.html
+}
+
+.quantity-label {
+	right: 200px;
+	width: 100px;
+}
+
+.cart-product-details {
+	display: inline-block;
+	width: 200px;
+	margin-left: 100px;
+}
+
+.cart-product-details h4 {
+	margin: 10px 0;
+	color: #13a19b;
+}
+
+@media (max-width: 900px) {
+	#products-nav ul {
+		width: 430px;
+	}
+	
+	#top-nav {
+		width: 350px;
+	}
+	
+	.new-product-detail-container {
+		margin: 0 auto;
+		display: block;
+	}
+	
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+	#products {
+		width: 600px;
+	}
+	
+	.new-product-detail-container {
+		width: 460px;
+	}
+	
+	.new-product img {
+		display: block;
+		margin: 10px auto;
+	}
+}
+
+@media (max-width: 600px) {
+	header {
+		margin-top: 0;
+	}
+	
+	#products {
+		width: 250px;
+	}
+	
+	.new-product img {
+		width: 100%;
+		margin: 10px 0;
+	}
 }

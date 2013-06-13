@@ -10,26 +10,78 @@
 </head>
 <body>
 	<header>
-		<a href="#Home">
-			<img id="hat-logo" src="img/Hat-Corner-Logo.png">
-		</a>
-		
-		<nav id="top-nav">
-			<!-- unordered list -->
-			<ul>
-				<!-- make them clickable by using <a>, the # brings it to the section id that we put it -->
-				<a href="#New Story"><li id="new-story-link" >New Story</li></a> 
-				<a href="#Product"><li id="product-link">Products</li></a>
-				<a href="#About Us"><li id="about-link">Our Story</li></a>
-				<a href="#Contact Us"><li id="contact-link">Contact Us</li></a>
-				<a href="#Add Cart"><li id="cart-link">View Cart</li></a>
-
-			</ul>
-		</nav>
+		<div class="border"></div>
+			<a href="#Home">
+				<img id="hat-logo" src="img/Hat-Corner-Logo.png">
+			</a>
+			
+			<nav id="top-nav">
+				<!-- unordered list -->
+				<ul>
+					<!-- make them clickable by using <a>, the # brings it to the section id that we put it -->
+					<a href="new-arrivals.html"><li>New Arrivals</li></a> 
+					<a href="products.html"><li>Products</li></a>
+					<a href="our-story.html"><li>Our Story</li></a>
+					<a href="contact.html"><li id="selected">Contact Us</li></a>
+					<a href="view-cart.html"><li>View Cart</li></a>
+	
+				</ul>
+			</nav>
+		<div class="border"></div>
 	</header>
 	
 	<section class="container" id="contact-us">
-		
+		<h1>Contact Us</h1>
+		<div class="contact-container">
+			<p>We'd love to hear from you. Email us or pick up the phone and speak to us.</p>
+			<p class="contact-details">
+				BC Hat Corner<br>
+				Toll Free: 800.255.8261<br>
+				Phone: 604.HAT.0001<br>
+				Fax: 604.HAT.0002<br>
+				E-mail: info@harcorner.com<br>
+				Hours: Mon-Fri 10:00-4:00 EST
+			</p>
+			
+			
+			<p>You can leave a message using the contact form below</p>
+			<form id="emailsection">
+				<!--Test out the position of the title-->
+				
+	             <!--Name Section-->
+				<fieldset>
+					<label for="name">Name: </label>
+					<input id="name" name="name" type="text" placeholder="First and last name" required="" autofocus="">
+				</fieldset>
+	
+	            <!--Email Address Section-->
+				<fieldset>
+					<label for="emailaddress">Email Address: </label>
+					<input id="emailaddress" name="Email Address" type="text" placeholder="First and last name" required="" autofocus="">
+				</fieldset>
+	
+				<!--Subject Section-->
+				<fieldset>
+					<label for="subject">Subject: </label>
+					<input id="subject" name="Subject" type="text" placeholder="First and last name" required autofocus="">
+				</fieldset>
+	
+				<!--Message Section-->
+				<fieldset>
+					<label for="message">Message:*    </label>
+					<textarea id="message" name="Message:*   " row="20" reqired></textarea>
+				</fieldset>
+	
+				<!--Send Email Button-->
+				<button type="submit" class="email-button">Send Email</button>
+	
+			</form>
+		</div>
+
 	</section>	
+	<footer>
+		<img id="credit-cards" src="img/Phase 2 IMG/VisaMC&AmexLogo.jpg"/>
+		<p id="copyright">&copy; Hat Corner 2013</p>
+	</footer>
 </body>
 </html>
