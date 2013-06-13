@@ -53,10 +53,10 @@ a:hover{
 
 .container {
 	background-color: #FFF;
-	height: 200px;
 	width: 80%;
 	margin: 0 auto;
 	border-radius: 20px;
+	overflow: hidden;
 }
 
 .product-nav-icons {
@@ -393,6 +393,37 @@ button {
 
 footer {
 	margin: 20px;
+}
+
+#new-arrivals {
+	background-color: #fff7be;
+}
+
+#new-arrivals h2 {
+	color: #13a19b;
+	margin: 10px auto 0;
+	width: 200px;
+	font-size: 30px;
+}
+
+.new-product {
+	background-color: white;
+	width: 90%;
+	margin: 25px auto;
+	border-radius: 20px;
+}
+
+.new-product img {
+	width: 200px;
+	margin: 10px 40px;
+}
+
+.new-product-details, .new-product-extra-details {
+	display: inline-block;
+}
+
+.new-product-details {
+	width: 230px;
 }
 
 #credit-cards {
