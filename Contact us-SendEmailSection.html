@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cap Corner Products</title>
+	<link rel="stylesheet" type="text/css" href="style-contactus.css" />
+	<link href='http://fonts.googleapis.com/css?family=Patrick+Hand+SC' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" media="(max-width:480px)" type="text/css" href="style_emailinfo.css" /> <!-- link to the emailinfo.css page-->
+	<script src="js/jquery-1.10.1.min.js"></script>
+	<script src="js/products.js"></script>
+	
+</head>
+<body>
+	<header>
+		<div class="border"></div>
+			<a href="#Home">
+				<img id="hat-logo" src="img/Hat-Corner-Logo.png">
+			</a>
+			
+			<nav id="top-nav">
+				<!-- unordered list -->
+				<ul>
+					<!-- make them clickable by using <a>, the # brings it to the section id that we put it -->
+					<a href="#New Story"><li id="new-story-link" >New Arrivals</li></a> 
+					<a href="#Product"><li id="product-link">Products</li></a>
+					<a href="#About Us"><li id="about-link">Our Story</li></a>
+					<a href="#Contact Us"><li id="contact-link">Contact Us</li></a>
+					<a href="#Add Cart"><li id="cart-link">View Cart</li></a>
+	
+				</ul>
+			</nav>
+		<div class="border"></div>
+	</header>
+	
+	<section class="container" id="contact-us">
+		<p id="emailsection">You can leave a message using the contact form below.</p>
+
+
+
+
+
+<!--set up Filling Email info Section-->
+		<form id="emailsection">
+			<!--Test out the position of the title-->
+			<h1>You can leave a message using the contact form below</h1>
+             
+             <!--Name Section-->
+			<fieldset>
+				
+					<ul>
+						<li>
+							<label for="name">Name: </label>
+							<input id="name" name="name" type="text" placeholder="First and last name" required="" autofocus="">
+						</li>
+					</ul>
+				
+			</fieldset>
+
+            <!--Email Address Section-->
+			<fieldset>
+				<label for="emailaddress">Email Address: </label>
+				<textarea id="emailaddress" name="Email Address" row="10" reqired></textarea>
+			</fieldset>
+
+			<!--Subject Section-->
+			<fieldset>
+				<label for="subject">Subject: </label>
+				<textarea id="subject" name="Subject" row="2" reqired></textarea>
+			</fieldset>
+
+			<!--Message Section-->
+			<fieldset>
+				<label for="message">Message:*    </label>
+				<textarea id="message" name="Message:*   " row="20" reqired></textarea>
+			</fieldset>
+
+			<!--Send Email Button-->
+			<fieldset id="send_email_button">
+				<button type="submit">Send Email</button>
+			</fieldset>
+
+		</form>
+
+
+
+
+
+
+
+
+
+
+	</section>	
+	
+	<footer>
+		<img id="credit-cards" src="img/Phase 2 IMG/VisaMC&AmexLogo.jpg"/>
+		<p id="copyright">&copy; Hat Corner 2013</p>
+	</footer>
+</body>
+</html>
