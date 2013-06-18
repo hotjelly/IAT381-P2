@@ -4,6 +4,7 @@
 	<title>Cap Corner Products</title>
 	<link rel="stylesheet" type="text/css" href="caps.css" />
 	<link href='http://fonts.googleapis.com/css?family=Patrick+Hand+SC' rel='stylesheet' type='text/css'>
+	<meta charset='utf-8'>
 	<script src="js/jquery-1.10.1.min.js"></script>
 	<script src="js/products.js"></script>
 	
@@ -12,19 +13,16 @@
 	<header>
 		<div class="border"></div>
 			<a href="#Home">
-				<img id="hat-logo" src="img/Hat-Corner-Logo.png">
+				<img id="hat-logo" src="img/Hat-Corner-Logo.png" alt="Hat Corner Logo">
 			</a>
 			
 			<nav id="top-nav">
-				<!-- unordered list -->
 				<ul>
-					<!-- make them clickable by using <a>, the # brings it to the section id that we put it -->
-					<a href="new-arrivals.html"><li>New Arrivals</li></a> 
-					<a href="products.html"><li id="selected">Products</li></a>
-					<a href="our-story.html"><li>Our Story</li></a>
-					<a href="contact.html"><li>Contact Us</li></a>
-					<a href="view-cart.html"><li>View Cart</li></a>
-	
+					<li><a href="new-arrivals.html" class="top-nav-link">New Arrivals</a></li>
+					<li><a href="products.html" class="top-nav-link" id="selected">Products</a></li>
+					<li><a href="our-story.html" class="top-nav-link">Our Story</a></li>
+					<li><a href="contact.html" class="top-nav-link">Contact Us</a></li>
+					<li><a href="view-cart.html" class="top-nav-link">View Cart</a></li>
 				</ul>
 			</nav>
 		<div class="border"></div>
@@ -219,7 +217,6 @@
 		</div>
 	</section>	
 	<footer>
-		<img id="credit-cards" src="img/Phase 2 IMG/VisaMC&AmexLogo.jpg"/>
 		<p id="copyright">&copy; Hat Corner 2013</p>
 	</footer>
 </body>
