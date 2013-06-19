@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Cap Corner Products</title>
-	<link rel="stylesheet" type="text/css" href="Home.css" />
+	<link rel="stylesheet" type="text/css" href="caps.css" />
 	<link href='http://fonts.googleapis.com/css?family=Patrick+Hand+SC' rel='stylesheet' type='text/css'>
   
 
@@ -12,78 +12,143 @@
 </head>
 <body>
 	<header>
-		<div class="border"></div>
-			<a href="#Home">
-				<img id="hat-logo" src="img/Hat-Corner-Logo.png">
-			</a>
-			
-			<nav id="top-nav">
-				<!-- unordered list -->
-				<ul>
-					<!-- make them clickable by using <a>, the # brings it to the section id that we put it -->
-					<a href="#New Story"><li id="new-story-link" >New Arrivals</li></a> 
-					<a href="#Product"><li id="product-link">Products</li></a>
-					<a href="#About Us"><li id="about-link">Our Story</li></a>
-					<a href="#Contact Us"><li id="contact-link">Contact Us</li></a>
-					<a href="#Add Cart"><li id="cart-link">View Cart</li></a>
-	
-				</ul>
-			</nav>
-		<div class="border"></div>
+		<a href="home.html">
+			<img id="hat-logo" src="img/Hat-Corner-Logo.png" alt="Hat Corner Logo">
+		</a>
+		
+		<nav id="top-nav">
+			<ul>
+				<li><a href="new-arrivals.html" class="top-nav-link">New Arrivals</a></li>
+				<li><a href="products.html" class="top-nav-link" id="selected">Products</a></li>
+				<li><a href="our-story.html" class="top-nav-link">Our Story</a></li>
+				<li><a href="contact.html" class="top-nav-link">Contact Us</a></li>
+				<li><a href="view-cart.html" class="top-nav-link">View Cart</a></li>
+			</ul>
+		</nav>
 	</header>
 	
-
-
-
-
-
-
-
-
-
-
-
-
-	<section class="container" id="contact-us">
-
-		<!-- New Arrival Logo -->
-		<a href="#Homepage">
-				<img id="NewArrivalLogo" src="img//Phase 2 IMG/NewArrivalLogo.png">
-			</a>
-
-
-	</section>	
-	
-
-
-		<!-- Messageboard Background -->
+	<section class="home-section">
+		<div class="product featured">
+			<img class="new-arrival-img" src="img/Phase 2 IMG/NewArrivalLogo.png">			<a href="detailpage.html"><span class="product-link"></span></a>
+			<img class="featured-img" src="img/beanies/product-bobble-hat-black-with-orangeofficial-product-label-_509e7101c55aa.jpg" alt="product 1">
+			<h2>Black Eye</h2>
+			<div class="production-info">
+				Production Date: Jul 3,2013					
+			</div>
+		</div>
+		
 		<a href="#Messageboard"  id="messageboradbg">
-				<img id="Messageboard" src="img/Messageboard.png">
+				<img id="Messageboard" src="img/Phase 2 IMG/Messageboard.png">
 		</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	</section>
+	
+	<nav id="products-nav" class="home">
+		<ul>
+			<li>
+				<a href="#">
+					<div id="beanie-button" class="selected">
+						<img class="product-nav-icons" src="img/Beanie-Selected.png" alt="beanies">
+						<div class="icon-text" id="beanie-text">Beanie</div>
+					</div>
+				</a>
+			</li>
+			<li id="hat-nav">
+				<a href="#">
+					<div id="hat-button">
+						<img class="product-nav-icons" src="img/Hat--NOT-Selected.png" alt="hats">
+						<div class="icon-text" id="hat-text">Hat</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div id="cap-button">
+						<img class="product-nav-icons" src="img/Cap--NOT-Selected.png" alt="caps">
+						<div class="icon-text">Cap</div>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	
+	<section id="products">
+		<div class="product">
+			<a href="detailpage.html"><span class="product-link"></span></a>
+				<div class="product-preview">
+					<img src="img/beanies/product-bobble-hat-black-with-orangeofficial-product-label-_509e7101c55aa.jpg" alt="product 1">
+					<h2>Black Eye</h2>
+					<div class="production-info">
+						Production Date: Jul 3,2013					
+					</div>
+				</div>
+				<div class="product-flip">
+					<h3>Black Eye</h3>
+					<p>
+						*Store selection may vary
+						and prices may differ from
+						those online.
+					</p>
+					<a href="detailpage.html" class="detail-link">
+						details
+					</a>
+					<div class="price">
+						$39.99
+					</div>
+				</div>
+		</div>
+		
+		<div class="product">
+			<a href="detailpage.html"><span class="product-link"></span></a>
+			<div class="product-preview">
+				<img src="img/beanies/Gray-Hat1.jpg" alt="product 1">
+				<h2>Sim River</h2>
+				<div class="production-info">
+					Production Date: May 18,2013					
+				</div>
+			</div>
+			<div class="product-flip">
+				<h3>Sim River</h3>
+				<p>
+					*Store selection may vary
+					and prices may differ from
+					those online.
+				</p>
+				<a href="detailpage.html" class="detail-link">
+					details
+				</a>
+				<div class="price">
+					$29.99
+				</div>
+			</div>
+		</div>
+		
+		<div class="product">
+			<a href="detailpage.html"><span class="product-link"></span></a>
+			<div class="product-preview">
+				<img src="img/beanies/cbe9caa5_da2d7cf4_f115_4a98_a36c_27b8c58df8b2.jpg" alt="product 1">
+				<h2>Blue-co</h2>
+				<div class="production-info">
+					Production Date: Apr 29,2013					
+				</div>
+			</div>
+			<div class="product-flip">
+				<h3>Blue-co</h3>
+				<p>
+					*Store selection may vary
+					and prices may differ from
+					those online.
+				</p>
+				<a href="detailpage.html" class="detail-link">
+					details
+				</a>
+				<div class="price">
+					$49.99
+				</div>
+			</div>
+		</div>
+	</section>
+	
 	<footer>
-		<img id="credit-cards" src="img/Phase 2 IMG/VisaMC&AmexLogo.jpg"/>
 		<p id="copyright">&copy; Hat Corner 2013</p>
 	</footer>
 </body>

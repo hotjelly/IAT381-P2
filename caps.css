@@ -36,6 +36,11 @@ a, img {
 	border: none;
 }
 
+header {
+	background-image: url("img/Phase 3 IMG/Top-Brown-Bar.png");
+	background-size: 750px;
+}
+
 header a, header a:visited {
 	color:#c38f5b;
 }
@@ -55,7 +60,7 @@ a:hover {
 
 #hat-logo {
 	height: 80px;
-	margin: 0 10px;
+	margin: 10px 60px;
 }
 
 .container {
@@ -559,6 +564,54 @@ label {
 	color: #13a19b;
 }
 
+/***************
+Home Page
+***************/
+
+.featured {
+	width: 300px;
+	background-color: #fff;
+	overflow: visible;
+	box-shadow: 10px 10px 0px rgba(221, 125, 71, 0.75);
+}
+
+.featured-img {
+	display: block;
+	margin: 0 auto;
+	height: 125px;
+}
+
+.new-arrival-img {
+	position: absolute;
+	top: -30px;
+	left: -30px;
+}
+
+.home-section {
+	margin: 0 auto;
+	width: 900px;
+}
+
+.home {
+	margin: 0;
+}
+
+.home ul {
+	width: 900px;
+}
+
+.home ul li {
+	height: 70px;
+}
+
+/*position:relative;
+    margin: 0 auto;
+    overflow:hidden;
+    width:250px;
+    height:200px;
+    display: inline-block;
+	margin: 0 20px 25px;
+	border-radius: 10px*/
 
 /***************
 Products Page
