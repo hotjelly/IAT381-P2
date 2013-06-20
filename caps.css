@@ -212,7 +212,7 @@ button:hover {
 
 .cart button {
 	float: right;
-	margin: 40px;
+	margin: 20px 40px;
 }
 
 #additional-details h3 {
@@ -404,6 +404,7 @@ footer {
 
 .new-product-detail-container {
 	display: inline-block;
+	vertical-align: top;
 }
 
 #credit-cards {
@@ -588,6 +589,7 @@ Home Page
 	position: absolute;
 	top: -30px;
 	left: -30px;
+	z-index: 5;
 }
 
 .home-section {
@@ -607,6 +609,32 @@ Home Page
 	height: 70px;
 }
 
+.home .category-button {
+	margin: 0 35px;
+}
+
+.message-board {
+	position: relative;
+	display: inline-block;
+	float: right;
+}
+
+.message-board h3, .message-board p {
+	position: absolute;
+	color: #FFF;
+}
+
+.message-board h3 {
+	left: 7px;
+}
+
+.message-board p {
+	top: 65px;
+	left: 15px;
+	width: 270px;
+	font-size: 14px;
+}
+
 /*position:relative;
     margin: 0 auto;
     overflow:hidden;
@@ -615,11 +643,50 @@ Home Page
     display: inline-block;
 	margin: 0 20px 25px;
 	border-radius: 10px*/
+	
+/***************
+New Arrivals Page
+***************/
+
+#new-arrivals h2:hover{
+	color: #11847f;
+}
+
+.arrival-images {
+	display: inline-block;
+}
+
+.arrival-images img{
+	display: block;
+	width: 90px;
+	max-height: 80px;
+	margin: 10px 0;
+}
 
 /***************
 Products Page
 ***************/
 
+.category-button {
+	position: relative;
+	border: 1px solid rgba(0,0,0,0);
+	width: 200px;
+	height: 125px;
+}
+
+.category-button img {
+	margin: 20px auto;
+	display: block;
+	height: 80px;
+}
+
+/*.category-button img:hover {
+	height: 90px;
+}*/
+
+.product-nav-icon, .product-nav-icon-selected {
+	position: absolute;
+}
 
 .product-nav-icons {
 	height: 80px;
@@ -627,10 +694,17 @@ Products Page
 	display: block;
 }
 
+.product-nav-icon-selected {
+	height: 80px;
+	margin: 0 auto;
+	display: block;
+}
+
+
 .icon-text {
-	position: relative;
-	top: -65px;
-	left: 45px;
+	position: absolute;
+	top: -15px;
+	left: 65px;
 }
 
 #all-button, #beanie-button, #hat-button, #cap-button {
@@ -674,8 +748,6 @@ Products Page
 
 #products-nav ul li {
 	display: inline-block;
-	width: 200px;
-	height: 100px;
 }
 
 #hat-nav {
@@ -715,6 +787,11 @@ Cart Page
 .payment-details p {
 	margin: 0;
 	color: #7F7F7F;
+}
+
+input[type="checkbox"] {
+	width: 15px;
+	margin: 0 5px 0 0;
 }
 
 /* Media Queries*/

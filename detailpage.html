@@ -28,35 +28,34 @@
 	<nav id="products-nav">
 		<ul>
 			<li>
-				<a href="#">
-					<div id="all-button">
-						<img class="product-nav-icons"  src="img/All--NOT-Selected.png" alt="all products">
-						<div class="icon-text">All</div>
-					</div>
-					
-				</a>
-			</li>
-			<li>
 				<a href="products.html">
-					<div id="beanie-button" class="selected">
-						<img class="product-nav-icons" src="img/Beanie-Selected.png" alt="beanies">
-						<div class="icon-text" id="beanie-text">Beanie</div>
-					</div>
-				</a>
-			</li>
-			<li id="hat-nav">
-				<a href="#">
-					<div id="hat-button">
-						<img class="product-nav-icons" src="img/Hat--NOT-Selected.png" alt="hats">
-						<div class="icon-text" id="hat-text">Hat</div>
+					<div class="category-button">
+						<!--roll over code adapted from: http://www.spiceupyourblog.com/2009/10/how-to-make-rollover-mouse-over-image.html-->
+						<img src="img/category-icons/all.png" onmouseover="this.src='img/category-icons/all-selected.png'" onmouseout="this.src='img/category-icons/all.png'" alt="All Products"/>
 					</div>
 				</a>
 			</li>
 			<li>
-				<a href="#">
-					<div id="cap-button">
-						<img class="product-nav-icons" src="img/Cap--NOT-Selected.png" alt="caps">
-						<div class="icon-text">Cap</div>
+				<a href="beanies.html">
+					<div class="category-button">
+						<!--roll over code adapted from: http://www.spiceupyourblog.com/2009/10/how-to-make-rollover-mouse-over-image.html-->
+						<img src="img/category-icons/beanie.png" onmouseover="this.src='img/category-icons/beanie-selected.png'" onmouseout="this.src='img/category-icons/beanie.png'" alt="Beanies"/>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="hats.html">
+					<div class="category-button">
+						<!--roll over code adapted from: http://www.spiceupyourblog.com/2009/10/how-to-make-rollover-mouse-over-image.html-->
+						<img src="img/category-icons/hat.png" onmouseover="this.src='img/category-icons/hat-selected.png'" onmouseout="this.src='img/category-icons/hat.png'" alt="Hat"/>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="caps.html">
+					<div class="category-button">
+						<!--roll over code adapted from: http://www.spiceupyourblog.com/2009/10/how-to-make-rollover-mouse-over-image.html-->
+						<img src="img/category-icons/cap.png" onmouseover="this.src='img/category-icons/cap-selected.png'" onmouseout="this.src='img/category-icons/cap.png'" alt="Cap"/>
 					</div>
 				</a>
 			</li>
@@ -85,9 +84,9 @@
 				<p>
 					WE produced 5, 6, 7 panel of various of sport cap or styling cap. This product was used materials such as cottoon fabric and button. It was inspired from the Dragon Boat Festival on June 21st, 2013. To find more detaisl, check out below
 				</p>
-				<form id="cart-form">
+				<form id="cart-form" method="post" action="view-cart.html">
 					<input type="text" name="firstname" value="1">
-					<button type="button">Add to Cart</button>
+					<button type="submit">Add to Cart</button>
 				</form>
 			</div>
 		</div>
