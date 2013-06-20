@@ -420,10 +420,6 @@ footer {
 	margin: 0 60px;
 }
 
-.cart-product img {
-	height: 120px;
-}
-
 .cart-head, .cart-foot {
 	border: 1px;
 	border-style: solid none;
@@ -476,6 +472,7 @@ fieldset {
 label {
 	width: 150px;
 	display: inline-block;
+	vertical-align: top;
 }
 
 .our-story p {
@@ -536,6 +533,12 @@ label {
 .cart-product {
 	overflow: hidden;
 	position: relative;
+	margin-top: 25px;
+}
+
+.cart-product img {
+	height: 120px;
+	vertical-align: top;
 }
 
 .price-label, .quantity-label {
@@ -692,10 +695,26 @@ input, textarea{
 
 .contact-details {
 	margin-left: 20px;
+	margin: 0 0 50px 20px;
 }
 
 .contact-details, #emailsection label {
 	color: #93918f;
+}
+
+/***************
+Cart Page
+***************/
+
+.payment-details {
+	clear: both;
+	border-top: 1px solid;
+	padding: 20px 30px;
+}
+
+.payment-details p {
+	margin: 0;
+	color: #7F7F7F;
 }
 
 /* Media Queries*/
