@@ -11,8 +11,6 @@ header {
 	padding: 7px 0 0px;
 	background-color: #fff7be;
 	overflow: hidden;
-	/*border: 10px #c38f5b;
-	border-style: dashed none;*/
 }
 
 .border {
@@ -45,7 +43,6 @@ header a, header a:visited {
 	color:#c38f5b;
 }
 
-/* when your mouse goes over it*/
 header a:hover{
 	color:#FFF;
 }
@@ -358,7 +355,9 @@ button {
 }
 
 footer {
-	margin: 20px;
+	background-color: #fff7be;
+	overflow: hidden;
+	margin-top: 30px;
 }
 
 #new-arrivals {
@@ -412,7 +411,7 @@ footer {
 }
 
 #copyright {
-	float: right;
+	text-align: center;
 	color: #888;
 	font-size: 21px;
 }
@@ -755,6 +754,14 @@ Products Page
 }
 
 /***************
+Our Story Page
+***************/
+
+.designer-photos {
+	display: inline-block;
+}
+
+/***************
 Contact Page
 ***************/
 input, textarea{
@@ -762,7 +769,8 @@ input, textarea{
 }
 
 .info-heading {
-	color: #c9c9c9;
+	color: #222;
+	font-size: 18px;
 }
 
 .contact-details {
@@ -794,8 +802,49 @@ input[type="checkbox"] {
 	margin: 0 5px 0 0;
 }
 
+/**/
+
+.verify-title {
+	border-bottom: 1px solid;
+	text-align: center;
+}
+
+.verify-title h2 {
+	margin-bottom: 5px;
+	color: #13a19b;
+	font-weight: 500;
+}
+
+.delivery {
+	border-top: 1px solid;
+	padding-bottom: 15px;
+}
+
+.cost {
+	border: 1px;
+	border-style: solid none;
+	padding: 20px;
+}
+
+.cost p, .delivery p {
+	display: inline-block;
+	margin: 0;
+}
+
+/***************
+Policy Page
+***************/
+.subtitle {
+	font-size: 20px;
+	margin: 0 35px;
+}
+
 /* Media Queries*/
 @media (max-width: 900px) {
+	.container {
+		width: 95%;
+	}
+	
 	#products-nav ul {
 		width: 430px;
 	}
@@ -816,6 +865,10 @@ input[type="checkbox"] {
 		width: 600px;
 	}
 	
+	.our-story p {
+		margin: 10px 40px 50px;
+	}
+	
 	.new-product-detail-container {
 		width: 460px;
 	}
@@ -831,6 +884,10 @@ input[type="checkbox"] {
 		margin-top: 0;
 	}
 	
+	.our-story p {
+		margin: 10px 20px 50px;
+	}
+	
 	#products {
 		width: 250px;
 	}
@@ -838,5 +895,9 @@ input[type="checkbox"] {
 	.new-product img {
 		width: 100%;
 		margin: 10px 0;
+	}
+	
+	input, textarea{
+		width: 100%;
 	}
 }
