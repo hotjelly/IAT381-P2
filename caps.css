@@ -1,3 +1,8 @@
+html, body {
+	height: 100%;
+	min-height: 100%;
+}
+
 body {
 	background: #B4DCDE url('img/bg.png');
 	margin: 0;
@@ -358,6 +363,9 @@ footer {
 	background-color: #fff7be;
 	overflow: hidden;
 	margin-top: 30px;
+	position: relative;
+	bottom: 0;
+	width: 100%;
 }
 
 #new-arrivals {
@@ -823,12 +831,48 @@ input[type="checkbox"] {
 .cost {
 	border: 1px;
 	border-style: solid none;
-	padding: 20px;
+	padding: 20px 0 20px 20px;
 }
 
 .cost p, .delivery p {
 	display: inline-block;
 	margin: 0;
+}
+
+.address, .verify-details {
+	display: inline-block;
+}
+
+.address {
+	vertical-align: top;
+}
+
+.verify-details {
+	float: right;
+	margin-bottom: 20px;
+	width: 250px;
+}
+
+.security {
+	clear: both;
+	border-top: 1px solid;
+	margin-top: 20px;
+}
+
+.verify-details span {
+	float: right;
+}
+
+.delivery h3 {
+	text-align: center;
+}
+
+#c2v {
+	width: 50px;
+}
+
+.clear-fix {
+	clear:both;
 }
 
 /***************
@@ -858,6 +902,9 @@ Policy Page
 		display: block;
 	}
 	
+	.top-nav-link {
+		margin: 5px 5px;
+	}
 }
 
 @media (min-width: 600px) and (max-width: 900px) {

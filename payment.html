@@ -75,6 +75,7 @@
 		            	<p>Before Tax</p>
 		            	<span>$135.00</span>
 	            	</div>
+	            	
 	            	<div>
 	            		<p>TAX</p>
 	            	</div>
@@ -91,17 +92,71 @@
 	            <span class="total">$151.20</span>
             </div>
             
-            <a href="payment.html"><button type="button" class="clear-fix">Save &amp; Continue</button></a>
             
             <div class="security">
-            	<p>* The security of your information is out priority. We use the latest security technology to encrypt all personal information 
-            		you submit through out site, including credit card numbers and addresses.</p>
+            	<h3>Payment</h3>
+            	<p>Please note, for additional security purposes, your credit card information is not saved</p>
             </div>
             
             <div class="payment-details">
+            	<span>We accept</span>
 				<img id="credit-cards" src="img/Phase 2 IMG/VisaMC&AmexLogo.jpg"/>
-				<p>&copy;Hat Corner 2013. Privacy Policy</p>
 			</div>
+			
+			<form id="payment-section">
+				
+	             <!--Name Section-->
+				<fieldset>
+					<label for="name">Payment Method: </label>
+					<select>
+					  <option value="visa">Visa</option>
+					  <option value="mc">Master Card</option>
+					  <option value="ae">American Express</option>
+					</select>
+				</fieldset>
+	
+	            <!--Email Address Section-->
+				<fieldset>
+					<label for="emailaddress">Card Number: </label>
+					<input id="name" name="name" type="text" required autofocus>
+				</fieldset>
+	
+				<!--Subject Section-->
+				<fieldset>
+					<label for="subject">Experation Date: </label>
+					<select>
+					  <option value="1">01</option>
+					  <option value="2">02</option>
+					  <option value="3">03</option>
+					</select>
+					<select>
+					  <option value="2013">2013</option>
+					  <option value="2014">2014</option>
+					  <option value="2015">2015</option>
+					  <option value="2016">2016</option>
+					  <option value="2017">2017</option>
+					</select>
+				</fieldset>
+	
+				<!--Message Section-->
+				<fieldset>
+					<label for="c2v">CV2 Number: </label>
+					<input id="c2v" name="c2v" maxlength="3" required>
+					<span><a href="#">How to find the C2V code</a></span>
+				</fieldset>
+	
+				<div class="checkout-options">
+					<p>It is important that you read and understand the Terms and Conditions which apply to this order</p>
+					<input type="checkbox" name="terms" value="True" id="checkbox">I agree to the <a href="#">Terms and Conditions</a>
+				</div>
+				
+				<a href="payment.html"><button type="button">Complete Your Purchase</button></a>
+			</form>
+			
+			<div class="security">
+            	<p>* The security of your information is out priority. We use the latest security technology to encrypt all personal information 
+            		you submit through out site, including credit card numbers and addresses.</p>
+            </div>
 		</div>
 	</section>	
 	
