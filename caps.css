@@ -1,12 +1,14 @@
-html, body {
+html {
 	height: 100%;
-	min-height: 100%;
 }
 
 body {
 	background: #B4DCDE url('img/bg.png');
 	margin: 0;
 	font-family: Helvetica, Arial, sans-serif;
+	position: relative;
+	min-height: 100%;
+	padding-bottom: 1px;
 }
 
 header {
@@ -15,7 +17,6 @@ header {
 	margin: 20px 0 40px 0;
 	padding: 7px 0 0px;
 	background-color: #fff7be;
-	overflow: hidden;
 }
 
 .border {
@@ -68,7 +69,7 @@ a:hover {
 .container {
 	background-color: #FFF;
 	width: 80%;
-	margin: 0 auto;
+	margin: 0 auto 100px;
 	border-radius: 20px;
 	overflow: hidden;
 }
@@ -111,18 +112,19 @@ a .selected {
 }
 
 #products {
-	margin: 0 auto;
+	margin: 0 auto 100px;
 	width: 900px;
 }
 
 #details {
 	background-color: #FFF;
-	margin: 0 50px;
+	margin: 0 50px 100px;
 	min-width: 970px;
 }
 
 #detail-image {
-	height: 400px;
+	width: 400px;
+	margin: 40px 0;;
 }
 
 #product-details {
@@ -363,7 +365,7 @@ footer {
 	background-color: #fff7be;
 	overflow: hidden;
 	margin-top: 30px;
-	position: relative;
+	position: absolute;
 	bottom: 0;
 	width: 100%;
 }
@@ -389,7 +391,7 @@ footer {
 
 .new-product img {
 	width: 200px;
-	margin: 10px 40px;
+	margin: 30px 4px;
 }
 
 .new-product-details, .new-product-extra-details {
@@ -398,20 +400,19 @@ footer {
 
 .new-product-extra-details {
 	width: 100px;
-	/*position: absolute;*/
 	left: 560px;
-	margin: 30px;
+	margin: 30px 0;
 }
 
 .new-product-details {
 	width: 230px;
-	/*position: absolute;*/
-	margin: 30px;
+	margin: 30px 10px;
 }
 
 .new-product-detail-container {
 	display: inline-block;
 	vertical-align: top;
+	overflow: hidden;
 }
 
 #credit-cards {
@@ -484,9 +485,12 @@ label {
 }
 
 .our-story p {
-	margin: 10px 80px 50px;
+	margin: 10px 0 50px 40px;
 	color: #555;
 	font-size: 16pt;
+	display: inline-block;
+	vertical-align: top;
+	width: 65%;
 }
 
 .contact-container {
@@ -556,7 +560,7 @@ label {
 
 .price-label {
 	right: 100px;
-	width: 100px;http://www.sfu.ca/~kcalder/iat381D402/P02-2/detailpage.html
+	width: 100px;
 }
 
 .quantity-label {
@@ -613,7 +617,7 @@ Home Page
 }
 
 .home ul li {
-	height: 70px;
+	height: 100px;
 }
 
 .home .category-button {
@@ -623,12 +627,19 @@ Home Page
 .message-board {
 	position: relative;
 	display: inline-block;
-	float: right;
+	margin: 10px 20px;
+}
+
+.featured-title {
+	color: #13A19B;
 }
 
 .message-board h3, .message-board p {
-	position: absolute;
 	color: #FFF;
+}
+
+.message-board h3 {
+	position: absolute;
 }
 
 .message-board h3 {
@@ -636,10 +647,25 @@ Home Page
 }
 
 .message-board p {
-	top: 65px;
-	left: 15px;
-	width: 270px;
+	width: 200px;
 	font-size: 14px;
+	margin: 0;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.message {
+	background-color: #f14255;
+	padding: 10px;
+}
+
+.message-tag {
+	margin-bottom: -4px;
+}
+
+.message img {
+	display: inline-block;
+	width: 200px;
 }
 
 /*position:relative;
@@ -665,8 +691,7 @@ New Arrivals Page
 
 .arrival-images img{
 	display: block;
-	width: 90px;
-	max-height: 80px;
+	width: 80px;
 	margin: 10px 0;
 }
 
@@ -767,6 +792,13 @@ Our Story Page
 
 .designer-photos {
 	display: inline-block;
+	width: 25%;
+}
+
+.designer-photos img {
+	display: block;
+	margin: 20px auto;
+	width: 200px;
 }
 
 /***************
@@ -824,7 +856,6 @@ input[type="checkbox"] {
 }
 
 .delivery {
-	border-top: 1px solid;
 	padding-bottom: 15px;
 }
 
@@ -875,6 +906,19 @@ input[type="checkbox"] {
 	clear:both;
 }
 
+.payment-section input {
+	width: 135px;
+}
+
+.payment-section input[type="checkbox"] {
+	width: 15px;
+	margin: 0 5px 0 0;
+}
+
+.payment-section input, .selects {
+	display: inline-block;
+}
+
 /***************
 Policy Page
 ***************/
@@ -905,6 +949,38 @@ Policy Page
 	.top-nav-link {
 		margin: 5px 5px;
 	}
+	
+	.message img {
+		display: none;
+	}
+	
+	.message-board {
+		position: absolute;
+	}
+	
+	.message-board p {
+		width: 260px;
+	}
+	
+	.our-story p {
+		width: 90%;	
+	}
+	
+	.designer-photos {
+		display: block;
+		width: 500px;
+		margin: 0 auto;
+	}
+	
+	.designer-photos img {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 20px 40px;
+	}
+	
+	.arrival-images {
+		display: none;
+	}
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
@@ -917,18 +993,52 @@ Policy Page
 	}
 	
 	.new-product-detail-container {
-		width: 460px;
+		width: 360px;
 	}
 	
 	.new-product img {
 		display: block;
 		margin: 10px auto;
 	}
+	
+	#top-nav {
+		bottom: 0;
+	}
+	
+	.home .category-button {
+		margin: 0 -5px;
+	}
+	
+	#products-nav ul {
+		width: 600px;
+	}
+	
 }
 
 @media (max-width: 600px) {
 	header {
-		margin-top: 0;
+		margin-top: 50px;
+	}
+	
+	.logo {
+		position: absolute;
+		top: -50px;
+		width: 100%;
+		height: 50px;
+		background-color: #fff;
+	}
+	
+	#hat-logo {
+		height: 50px;
+		margin: 0 auto;
+		display: block;
+	}
+	
+	#top-nav {
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		top: -10px;
 	}
 	
 	.our-story p {
@@ -942,6 +1052,83 @@ Policy Page
 	.new-product img {
 		width: 100%;
 		margin: 10px 0;
+	}
+	
+	.verify-details {
+		float: none;
+		margin: 20px auto 40px;
+		display: block;
+		border-top: 1px solid;
+	}
+	
+	.checkout-options {
+		margin-left: 20px;
+	}
+	
+	.payment-section input, .selects {
+		display: block;
+	}
+	
+	#select-year {
+		display: inline-block;
+	}
+	
+	.cart button {
+		margin: 10px auto;
+		display: block;
+		float: none;
+	}
+	
+	.featured {
+		display: none;
+	}
+	
+	.message-board {
+		margin: 0 auto 40px;
+		display: block;
+		width: 300px;
+		position: relative;
+	}
+	
+	.home-section {
+		width: 100%;
+	}
+	
+	/*.home .category-button, #products-nav.home {
+		display: none;	
+	}*/
+	
+	#products.home {
+		display: none;
+	}
+	
+	.home .category-button {
+		margin: 0 -15px;
+	}
+	
+	#products-nav ul {
+		width: 360px;
+	}
+	
+	.designer-photos {
+		width: 200px;
+	}
+	
+	.designer-photos img {
+		display: block;
+	}
+	
+	.new-product-extra-details {
+		display: block;
+		margin: -50px 0px 0 130px;
+	}
+	
+	.new-product-detail-container {
+		width: 225px;
+	}
+	
+	.price.new, .detail-link.new {
+		margin-top: 20px;	
 	}
 	
 	input, textarea{

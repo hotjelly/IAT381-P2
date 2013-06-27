@@ -4,15 +4,17 @@
 	<title>Cap Corner Checkout</title>
 	<link rel="stylesheet" type="text/css" href="caps.css" />
 	<link href='http://fonts.googleapis.com/css?family=Patrick+Hand+SC' rel='stylesheet' type='text/css'>
+	<meta charset="UTF-8">
 	<script src="js/jquery-1.10.1.min.js"></script>
 	<script src="js/products.js"></script>
-	
 </head>
 <body>
 	<header>
-		<a href="home.html">
-			<img id="hat-logo" src="img/Phase 3 IMG/Hat-Corner-Logo-Updated2.png" alt="Hat Corner Logo">
-		</a>
+		<div class="logo">
+			<a href="home.html">
+				<img id="hat-logo" src="img/Phase 3 IMG/Hat-Corner-Logo-Updated2.png" alt="Hat Corner Logo">
+			</a>
+		</div>
 		
 		<nav id="top-nav">
 			<ul>
@@ -51,7 +53,7 @@
             </div>
             <div class="verify-details">
             	<div class="delivery">
-	            	<h3>Delivery OverView</h3>
+	            	<h3>Delivery Overview</h3>
 	            	<div>
 		            	<p>Estimated Delivery:</p>
 		            	<span>2013-09-04</span>
@@ -103,16 +105,18 @@
 				<img id="credit-cards" src="img/Phase 2 IMG/VisaMC&AmexLogo.jpg"/>
 			</div>
 			
-			<form id="payment-section">
+			<form class="payment-section">
 				
 	             <!--Name Section-->
 				<fieldset>
 					<label for="name">Payment Method: </label>
-					<select>
-					  <option value="visa">Visa</option>
-					  <option value="mc">Master Card</option>
-					  <option value="ae">American Express</option>
-					</select>
+					<div class="selects">
+						<select>
+						  <option value="visa">Visa</option>
+						  <option value="mc">Master Card</option>
+						  <option value="ae">American Express</option>
+						</select>
+					</div>
 				</fieldset>
 	
 	            <!--Email Address Section-->
@@ -124,18 +128,20 @@
 				<!--Subject Section-->
 				<fieldset>
 					<label for="subject">Experation Date: </label>
-					<select>
-					  <option value="1">01</option>
-					  <option value="2">02</option>
-					  <option value="3">03</option>
-					</select>
-					<select>
-					  <option value="2013">2013</option>
-					  <option value="2014">2014</option>
-					  <option value="2015">2015</option>
-					  <option value="2016">2016</option>
-					  <option value="2017">2017</option>
-					</select>
+					<div class="selects">
+						<select>
+						  <option value="1">01</option>
+						  <option value="2">02</option>
+						  <option value="3">03</option>
+						</select>
+						<select>
+						  <option value="2013">2013</option>
+						  <option value="2014">2014</option>
+						  <option value="2015">2015</option>
+						  <option value="2016">2016</option>
+						  <option value="2017">2017</option>
+						</select>
+					</div>
 				</fieldset>
 	
 				<!--Message Section-->
