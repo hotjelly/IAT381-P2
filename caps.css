@@ -41,7 +41,7 @@ a, img {
 }
 
 header {
-	background-image: url("img/Phase 3 IMG/Top-Brown-Bar.png");
+	background-image: url("img/Phase%203%20IMG/Top-Brown-Bar.png");
 	background-size: 750px;
 }
 
@@ -119,7 +119,6 @@ a .selected {
 #details {
 	background-color: #FFF;
 	margin: 0 50px 100px;
-	min-width: 970px;
 }
 
 #detail-image {
@@ -129,8 +128,8 @@ a .selected {
 
 #product-details {
 	float: right;
-	margin: 90px 70px 0;
-	width: 300px;
+	margin: 90px 20px 0;
+	width: 250px;
 }
 
 #tag {
@@ -142,7 +141,6 @@ a .selected {
 
 #main-details {
 	margin: 0 auto;
-	width: 850px;
 }
 
 #main-details div {
@@ -191,6 +189,7 @@ a .selected {
 	border-left: 1px solid #555;
 	margin: 15px 0 15px 50px;
 	width: 200px;
+	display: inline-block;
 }
 
 #inspiration img {
@@ -219,6 +218,27 @@ button:hover {
 	margin: 20px 40px;
 }
 
+.button {
+	background-color: #13a19b;
+	border: 0;
+	border-radius: 6px;
+	padding: 5px 15px;
+	color: white;
+	margin-left: 15px;
+	margin-bottom: 20px;
+}
+
+.button:hover {
+	background-color: #11847f;
+	cursor: pointer;
+	color: white;
+}
+
+.cart .button {
+	float: right;
+	margin: 20px 40px;
+}
+
 #additional-details h3 {
 	margin: 20px 50px;
 	font-weight: 600;
@@ -226,11 +246,13 @@ button:hover {
 }
 
 #additional-details p {
-	margin: 10px 100px;
+	margin: 10px 0 10px 70px;
 	font-size: 12pt;
 	line-height: 17pt;
 	font-weight: 800;
 	color: #555;
+	display: inline-block;
+	width: 60%;
 }
 
 button {
@@ -345,7 +367,7 @@ button {
 }
 
 .detail-link, .price {
-	margin: 40px 20px 0;
+	margin: 10px 20px 0;
 	display: inline-block;
 }
 
@@ -440,10 +462,6 @@ footer {
 	color: #13a19b;
 	font-size: 21px;
 	font-weight: 300;
-}
-
-.checkout-nav {
-	height: 30px;
 }
 
 .cart span {
@@ -570,7 +588,7 @@ label {
 
 .cart-product-details {
 	display: inline-block;
-	width: 200px;
+	width: 215px;
 	margin-left: 100px;
 }
 
@@ -826,6 +844,31 @@ input, textarea{
 Cart Page
 ***************/
 
+.checkout-nav div {
+	display: inline-block;
+	margin: 5px 5px;
+	font-size: 16px;
+	position: relative;
+}
+
+.checkout-nav div p{
+	position: absolute;
+	top: 0;
+	left: 6px;
+	color: #fff;
+	margin: 0;
+}
+
+.checkout-nav div img {
+	height: 20px;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.checkout-nav .current {
+	color: #fb853c;
+}
+
 .payment-details {
 	clear: both;
 	border-top: 1px solid;
@@ -835,6 +878,10 @@ Cart Page
 .payment-details p {
 	margin: 0;
 	color: #7F7F7F;
+}
+
+.complete {
+	padding: 40px;
 }
 
 input[type="checkbox"] {
@@ -927,10 +974,41 @@ Policy Page
 	margin: 0 35px;
 }
 
+@media (max-width: 1150px) {
+	#inspiration {
+		border-left: none;
+		border-top: 1px solid;
+		width: 100%;
+	}
+	
+	#inspiration img {
+		display: inline-block;
+		margin: 5px 25px;
+	}
+	
+	#additional-details {
+		margin: 45px auto 0;
+	}
+	
+	#additional-details p {
+		width: 80%;
+		margin: 10px auto;
+		display: block;
+	}
+	
+	.cart-product-details {
+		display: block;	
+	}
+}
+
 /* Media Queries*/
 @media (max-width: 900px) {
-	.container {
+	.container, #details {
 		width: 95%;
+	}
+	
+	#details {
+		margin: 0 auto;
 	}
 	
 	#products-nav ul {
@@ -981,6 +1059,19 @@ Policy Page
 	.arrival-images {
 		display: none;
 	}
+	
+	#product-details {
+		float: none;
+		margin: 0 auto;
+	}
+	
+	#product-images {
+		margin: 0 auto;
+	}
+	
+	#main-details div {
+		display: block;	
+	}
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
@@ -1010,9 +1101,20 @@ Policy Page
 	}
 	
 	#products-nav ul {
-		width: 600px;
+		width: 420px;
+	}
+		
+	.price-label, .cart-product-price {
+		right: 0px;
 	}
 	
+	.quantity-label, .cart-product-quantity {
+		right: 80px
+	}
+	
+	.cart-product-remove {
+		top: 240px;
+	}
 }
 
 @media (max-width: 600px) {
@@ -1079,6 +1181,14 @@ Policy Page
 		float: none;
 	}
 	
+	.cart .button {
+		margin: 10px auto;
+		display: block;
+		float: none;
+		width: 180px;
+		text-align: center;
+	}
+	
 	.featured {
 		display: none;
 	}
@@ -1094,9 +1204,9 @@ Policy Page
 		width: 100%;
 	}
 	
-	/*.home .category-button, #products-nav.home {
-		display: none;	
-	}*/
+	.category-button {
+		width: 170px;
+	}
 	
 	#products.home {
 		display: none;
@@ -1129,6 +1239,26 @@ Policy Page
 	
 	.price.new, .detail-link.new {
 		margin-top: 20px;	
+	}
+	
+	.price-label.top-label {
+		display: none;
+	}
+	
+	.quantity-label.top-label, .cart-product-quantity, .price-label, .cart-product-price {
+		right: 0px;
+	}
+	
+	.cart-product-price {
+		top: 70px;
+	}
+	
+	.cart-product-remove {
+		top: 100px;
+	}
+	
+	.quantity-label  {
+		right: 60px
 	}
 	
 	input, textarea{

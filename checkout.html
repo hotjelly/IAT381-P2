@@ -12,7 +12,7 @@
 	<header>
 		<div class="logo">
 			<a href="home.html">
-				<img id="hat-logo" src="img/Phase 3 IMG/Hat-Corner-Logo-Updated2.png" alt="Hat Corner Logo">
+				<img id="hat-logo" src="img/Phase%203%20IMG/Hat-Corner-Logo-Updated2.png" alt="Hat Corner Logo">
 			</a>
 		</div>
 		
@@ -35,8 +35,12 @@
 				<div class="checkout-details">
 					<h3>Check Out</h3>
 					<span>Your transaction is guaranteed secure</span>
-					<img class="checkout-nav" src="img/checkout-nav.png" />
-					<span class="help">Need Help? <a href="#">Click Here</a></span>
+					<div class="checkout-nav">
+						<div class="current"><img src="img/Phase%203%20IMG/Process-Pointing-Arrow.png" alt="step 1"/><p>1</p>Address</div>
+						<div><img src="img/Phase%203%20IMG/Process-Pointing-Arrow--GREY.png" alt="step 2"/><p>2</p>Order Review &amp; Payment</div>
+						<div><img src="img/Phase%203%20IMG/Process-Pointing-Arrow--GREY.png" alt="step 3"/><p>3</p>Complete</div>
+					</div>
+					<span class="help">Need Help? <a href="needhelp.html">Click Here</a></span>
 					<span>Address</span>
 					<p>Billing address<br>
 						Please note that your billing address must exactly match the address your credit card company has on file. <br>*mandatory fields
@@ -52,7 +56,7 @@
 				<!--First Name Section-->
 				<fieldset>
 					<label for="lastname"> Last Name:* </label>
-					<input id="lastname" name="lastname" type="text" placeholder="Last Name"required="" autofocus="">
+					<input id="lastname" name="lastname" type="text" placeholder="Last Name" required="" autofocus="">
 				</fieldset>
 
 					<!--Adress 1 section-->
@@ -104,20 +108,20 @@
 
 					<!--Home Phone section-->
 					<fieldset>
-						<label for="Home Phone"> Home Phone: </label>
-						<input id="Home Phone" name="Home Phone"  autofocus="">
+						<label for="home-phone"> Home Phone: </label>
+						<input id="home-phone" name="Home Phone">
 					</fieldset>
 
 					<!--Mobile Phone section-->
 					<fieldset>
-						<label for="Mobile Phone "> Mobile Phone : </label>
-						<input id="Mobile Phone " name="Mobile Phone "  autofocus="">
+						<label for="mobile-phone"> Mobile Phone : </label>
+						<input id="mobile-phone" name="Mobile Phone">
 					</fieldset>
 
 					<!--Fax section-->
 					<fieldset>
-						<label for="Fax "> Fax Number : </label>
-						<input id="Fax " name="Fax "  autofocus="">
+						<label for="Fax"> Fax Number : </label>
+						<input id="Fax" name="Fax"  autofocus="">
 					</fieldset>
 
 	
@@ -126,7 +130,7 @@
 					<p>By continuing to the next step you agree to the <a href="policy.html">Privacy Policy, return policy and delivery terms.</a></p>
 				</div>
 				
-				<a href="verify.html"><button type="button">Save &amp; Continue</button></a>
+				<a href="payment.html" class="button">Save &amp; Continue</a>
 	
 			</form>
 		</div>

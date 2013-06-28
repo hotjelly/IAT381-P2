@@ -12,7 +12,7 @@
 	<header>
 		<div class="logo">
 			<a href="home.html">
-				<img id="hat-logo" src="img/Phase 3 IMG/Hat-Corner-Logo-Updated2.png" alt="Hat Corner Logo">
+				<img id="hat-logo" src="img/Phase%203%20IMG/Hat-Corner-Logo-Updated2.png" alt="Hat Corner Logo">
 			</a>
 		</div>
 		
@@ -35,7 +35,12 @@
 			<div class="checkout-details">
 				<h3>Check Out</h3>
 				<span>Your transaction is guaranteed secure</span>
-				<img class="checkout-nav" src="img/checkout-nav.png" />
+				<div class="checkout-nav">
+					<div><img src="img/Phase%203%20IMG/Process-Pointing-Arrow--GREY.png" alt="step 1"/><p>1</p>Address</div>
+					<div class="current"><img src="img/Phase%203%20IMG/Process-Pointing-Arrow.png" alt="step 2"/><p>2</p>Order Review &amp; Payment</div>
+					<div><img src="img/Phase%203%20IMG/Process-Pointing-Arrow--GREY.png" alt="step 3"/><p>3</p>Complete</div>
+				</div>
+				<span class="help">Need Help? <a href="needhelp.html">Click Here</a></span>
             </div>
             <div class="verify-title">
             	<h2>Delivery Information</h2>
@@ -102,16 +107,16 @@
             
             <div class="payment-details">
             	<span>We accept</span>
-				<img id="credit-cards" src="img/Phase 2 IMG/VisaMC&AmexLogo.jpg"/>
+				<img id="credit-cards" src="img/Phase%202%20IMG/VisaMCAmexLogo.jpg" alt="Credit Cards"/>
 			</div>
 			
 			<form class="payment-section">
 				
 	             <!--Name Section-->
 				<fieldset>
-					<label for="name">Payment Method: </label>
+					<label for="cardtype">Payment Method: </label>
 					<div class="selects">
-						<select>
+						<select id="cardtype">
 						  <option value="visa">Visa</option>
 						  <option value="mc">Master Card</option>
 						  <option value="ae">American Express</option>
@@ -121,13 +126,13 @@
 	
 	            <!--Email Address Section-->
 				<fieldset>
-					<label for="emailaddress">Card Number: </label>
-					<input id="name" name="name" type="text" required autofocus>
+					<label for="cardnumber">Card Number: </label>
+					<input id="cardnumber" name="cardnumber" type="text" required autofocus>
 				</fieldset>
 	
 				<!--Subject Section-->
 				<fieldset>
-					<label for="subject">Experation Date: </label>
+					<label>Experation Date: </label>
 					<div class="selects">
 						<select>
 						  <option value="1">01</option>
@@ -147,16 +152,16 @@
 				<!--Message Section-->
 				<fieldset>
 					<label for="c2v">CV2 Number: </label>
-					<input id="c2v" name="c2v" maxlength="3" required>
-					<span><a href="#">How to find the C2V code</a></span>
+					<input id="c2v" name="c2v" maxlength="4" required>
+					<span><a href="cvcode.html">How to find the C2V code</a></span>
 				</fieldset>
 	
 				<div class="checkout-options">
 					<p>It is important that you read and understand the Terms and Conditions which apply to this order</p>
-					<input type="checkbox" name="terms" value="True" id="checkbox">I agree to the <a href="#">Terms and Conditions</a>
+					<input type="checkbox" name="terms" value="True" id="checkbox">I agree to the <a href="policy.html">Terms and Conditions</a>
 				</div>
 				
-				<a href="payment.html"><button type="button">Complete Your Purchase</button></a>
+				<a href="process4.html" class="button">Complete Your Purchase</a>
 			</form>
 			
 			<div class="security">
